@@ -1,7 +1,4 @@
-## System Design lavel-1?
-
-First Lecture: ![latency List Page](./README1.md)
-
+## What is network latency?
 Latency is a measure of delay.  In a network, latency measures the time it takes for some data to get to its destination across the network
 
 in short word Latency => responce time form server
