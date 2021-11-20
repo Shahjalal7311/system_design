@@ -68,7 +68,7 @@ We can check ring buffer size by command
 
 
 ## NAT Gateway
-A NAT gateway is a Network Address Translation (NAT) service. You can use a NAT gateway so that instances in a private subnet can connect to services outside your VPC(virtual private cloud) but external services cannot initiate a connection with those instances. 
+A NAT gateway is a Network Address Translation (NAT) service. we can use a NAT gateway so that instances in a private subnet can connect to services outside VPC(virtual private cloud) but external services cannot initiate a connection with those instances. 
 
 For Details [NAT](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html)
 
