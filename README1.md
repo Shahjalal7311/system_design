@@ -45,9 +45,57 @@ The maximum amount of data transmitted over an internet connection in a given am
 In computer network, port is a virtual point where network connection is start and end or communication endpoint.
 
 In general, process and port one to one mapping all time why?
-Because, one or more process can be comunicating with each other with reliable and stable.The process could be same computer or different computer.
+
+Because, one or more process can be communicating with each other with reliable and stable.The process could be same computer or different computer.
 
 ![process-to-port](./docs/images/process-to-port.png)
+
+TCP communication needs two ports
+  1. source port - send the data or packet and receive the acknowledgement from the receiver
+  2. destination port - receive the data and packet and send the acknowledgement to sender.
+
+TCP port range: 1024 to 49151
+
+![about-tcp](./docs/images/tcp-communication.png)
+
+## what is ring buffer?
+Ring Buffer are shared buffers between the device driver and network interface card (NIC), which is store incoming packets until the device driver can process them.The ring buffer also known as circular buffer.
+
+Ring buffers exist on both the receive (rx) and transmit (tx) side of each interface on the firewall.
+
+We can check ring buffer size by command
+    `HostName> show interface NAME_of_PHYSICAL_INTERFACE rx-ringsize`
+
+
+## NAT Gateway
+A NAT gateway is a Network Address Translation (NAT) service. You can use a NAT gateway so that instances in a private subnet can connect to services outside your VPC(virtual private cloud) but external services cannot initiate a connection with those instances. 
+
+For Details [NAT](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html)
+
+
+## Stateless Protocol
+Stateless Protocols are the type of network protocols in which Client send request to the server and server response back according to current state. It does not require the server to retain session information or a status about each communicating partner for multiple request.
+
+In short word: it doesn't remember any request or response.
+
+## Stateful Protocol
+Stateful Protocol If client send a request to the server then it expects some kind of response, if it does not get any response then it resend the request.
+
+## HTTP, HTTPS
+
+HTTP(Hypertext Transfer Protocol): HTTP is an application-layer protocol that runs over TCP.
+
+HTTPS(Hypertext Transfer Protocol Secure):HTTPS transmits its data security using an encrypted connection over http.it's created by Netscape Communications back in 1994.
+![http-https](./docs/images/http-https.png)
+
+## TCP handshake
+TCP uses a three-way handshake to establish a reliable connection.Which is used in TCP/IP network to  make connection between to server and client.
+
+
+![tcp-handshake](./docs/images/tcp-handshake.png)
+
+
+
 
 
 
