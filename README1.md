@@ -125,7 +125,7 @@ Egress: Egress refers to data leaving a network in transit to an external locati
 Ingress: Ingress traffic is composed of all the data communications and network traffic originating from external networks.In other words, ingress refers to traffic that comes from outside an organization's network and is transferred into it.
 
 
-![Networking Fundamentals in practicalnetworking]((https://www.practicalnetworking.net/index/networking-fundamentals-how-data-moves-through-the-internet/)
+[Networking Fundamentals in practicalnetworking]((https://www.practicalnetworking.net/index/networking-fundamentals-how-data-moves-through-the-internet/)
 
 
 
