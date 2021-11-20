@@ -95,6 +95,41 @@ TCP uses a three-way handshake to establish a reliable connection.Which is used 
 ![tcp-handshake](./docs/images/tcp-handshake.png)
 
 
+Sharing data or packets from one computer(client or browser) to another computer(server) will require some information.
+  1. Data
+  2. Source IP(SI)
+  3. Destination IP(DI)
+  4. Source IP Port
+  5. Destination IP port
+
+After reaching in server it's process the request and gives the responce.
+
+![Data sharing process](./docs/images/full-process.png)
+
+## Switch and Router?
+
+Switch: Switches are networking devices operating at layer 2 or a data link layer of the OSI model.Switches are key building blocks for any network
+
+Router: The router is a physical or virtual internetworking device that is designed to receive, analyze, and forward data packets between computer networks.
+
+
+##  What is DHCP?
+DHCP is a network management protocol. A client device (or DHCP client), such as a laptop, joins a network and requests an IP address. The request is made to a DHCP server.
+
+![DHCP](./docs/images/dhcp.png)
+
+## Egress and Ingress
+
+Egress: Egress refers to data leaving a network in transit to an external location(the action of going or coming out)
+
+Ingress: Ingress traffic is composed of all the data communications and network traffic originating from external networks.In other words, ingress refers to traffic that comes from outside an organization's network and is transferred into it.
+
+
+
+
+
+
+
 
 
 
