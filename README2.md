@@ -39,7 +39,7 @@ Work flow: application->os->karnel
 ## KVM 
 KVM (for Kernel-based Virtual Machine) is a full virtualization solution for Linux on x86 hardware containing virtualization extensions (Intel VT or AMD-V). It consists of a loadable kernel module, kvm.ko, that provides the core virtualization infrastructure and a processor specific module, kvm-intel.ko or kvm-amd.ko.
 
-[KVM link 1](https://www.linux-kvm.org/page/Main_Page) 
+[KVM link 1](https://www.linux-kvm.org/page/Main_Page)  
 [KVM link 2](https://www.redhat.com/en/topics/virtualization/what-is-KVM)  
 
 
@@ -59,6 +59,14 @@ Linux bridge details: [ Linux bridge ](https://www.ibm.com/docs/en/linux-on-syst
 veth detail here: [veth](https://man7.org/linux/man-pages/man4/veth.4.html)
 
 ![ Linux bridge ](./docs/images/vm-img1.png)
+
+
+## Domain collision?
+The collision domain defines the set of devices on which their frames could collide. It is a network segment connected by a shared medium or using repeaters where real-time data transmissions collide.
+
+[Domain collision](https://www.geeksforgeeks.org/collision-domain-and-broadcast-domain-in-computer-network/)
+
+
 
 
 
