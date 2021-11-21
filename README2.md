@@ -22,7 +22,7 @@ Virtualization Details [virtualization](https://www.ibm.com/cloud/learn/virtuali
 ## How virtualization work?
 
 Physical layer() have some major component.Those ase  
-        - application : when run application in usernamespace it's call different OS API.The OS api called System api Application run always run usernamespace.   
+        - application : when run application in usernamespace it's call different OS API.The OS api called System api.Application run always run usernamespace.   
         - os: make connection between application and karnel.  
         - karnel: manage the resource.  
 
@@ -34,6 +34,36 @@ how execution processor:
 Work flow: application->os->karnel  
 
 ![ virtualization works fllow ](./docs/images/vm-works.png)
+![ virtualization works fllow ](./docs/images/work-flow-1.png)
+
+## KVM 
+KVM (for Kernel-based Virtual Machine) is a full virtualization solution for Linux on x86 hardware containing virtualization extensions (Intel VT or AMD-V). It consists of a loadable kernel module, kvm.ko, that provides the core virtualization infrastructure and a processor specific module, kvm-intel.ko or kvm-amd.ko.
+
+[KVM link 1](https://www.linux-kvm.org/page/Main_Page) 
+[KVM link 2](https://www.redhat.com/en/topics/virtualization/what-is-KVM)  
+
+
+## Openvswitch:
+Open vSwitch is a multilayer software switch licensed under the open source Apache 2 license. Our goal is to implement a production quality switch platform that supports standard management interfaces and opens the forwarding functions to programmatic extension and control.
+
+[ Openvswitch ](https://docs.openvswitch.org/en/latest/intro/what-is-ovs/#overview)
+
+![ Openvswitch ](./docs/images/open-v-switch.png)
+
+
+## Linux bridge
+linux bridge: Linux bridge behaves like a network switch. it's connect multiple vm in same network.
+Every VM is connect to hub by veth(virtual Ethernet).
+
+Linux bridge details: [ Linux bridge ](https://www.ibm.com/docs/en/linux-on-systems?topic=choices-using-linux-bridge)  
+veth detail here: [veth](https://man7.org/linux/man-pages/man4/veth.4.html)
+
+![ Linux bridge ](./docs/images/vm-img1.png)
+
+
+
+
+
 
 
 
