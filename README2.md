@@ -70,9 +70,11 @@ The collision domain defines the set of devices on which their frames could coll
 ## VXLAN
 VXLAN is an encapsulation protocol that provides data center connectivity using tunneling to stretch Layer 2 connections over an underlying Layer 3 network.
 
-Details VXLAN: [VXLAN link 1](https://www.juniper.net/us/en/research-topics/what-is-vxlan.html), [VXLAN](https://datatracker.ietf.org/doc/html/rfc7348)
+Details VXLAN: [VXLAN link 1](https://www.juniper.net/us/en/research-topics/what-is-vxlan.html), [VXLAN link 2](https://datatracker.ietf.org/doc/html/rfc7348)
 
 
 [ vxlan-img-1 ](./docs/images/vxlan-img-1.png)
+
 [ vxlan-img-2 ](./docs/images/vxlan-img-2.png)
+
 [ vxlan-img-3 ](./docs/images/vxlan-img-3.png)
