@@ -21,16 +21,16 @@ Virtualization Details [virtualization](https://www.ibm.com/cloud/learn/virtuali
 
 ## How virtualization work?
 
-Physical layer() have some major component.Those ase
-        - application : when run application in usernamespace it's call different OS API.The OS api called System api.Application run always run usernamespace. 
-        - os: make connection between application and karnel.
-        - karnel: manage the resource.
-how execution processor: 
-    - fetch : is the operation which receives instructions from program memory from a systems RAM. 
-    - Decode: the instruction is converted to understand which other parts of the CPU are needed to continue the operation. This is performed by the instruction decoder
-    - Execute: perfomr the operation and keep that Each part of the CPU that is needed is activated to carry out the instructions.
+Physical layer() have some major component.Those ase  
+        - application : when run application in usernamespace it's call different OS API.The OS api called System api.Application run always run usernamespace.   
+        - os: make connection between application and karnel.  
+        - karnel: manage the resource.  
+how execution processor:   
+    - fetch : is the operation which receives instructions from program memory from a systems RAM.   
+    - Decode: the instruction is converted to understand which other parts of the CPU are needed to continue the operation. This is performed by the instruction decoder  
+    - Execute: perfomr the operation and keep that Each part of the CPU that is needed is activated to carry out the instructions.  
 
-Work flow: application->os->karnel
+Work flow: application->os->karnel  
 
 ![ virtualization works fllow ](./docs/images/vm-works.png)
 
