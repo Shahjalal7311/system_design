@@ -1,7 +1,7 @@
 ## What is cloud?
 "The cloud" means a servers which is accessed over the Internet, and the software and databases or ther process that run on those servers. Cloud servers are located in data centers all over the world.
 
-cloud details: [Latency](https://www.cloudflare.com/en-gb/learning/cloud/what-is-the-cloud/)
+cloud details: [cloud](https://www.cloudflare.com/en-gb/learning/cloud/what-is-the-cloud/)
 ![ cloud ](./docs/images/cloud.png)
 
 Openstack [Openstack](https://docs.openstack.org/install-guide/get-started-logical-architecture.html)
