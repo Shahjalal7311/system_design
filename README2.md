@@ -7,10 +7,6 @@ cloud details: [cloud](https://www.cloudflare.com/en-gb/learning/cloud/what-is-t
 ## Openstack
 Openstack [Openstack](https://docs.openstack.org/install-guide/get-started-logical-architecture.html)
 
-# SNAT(Source Network Address Translation)
-Secure or Source network address translation is network address translation technique that enable private network security or source by providing a public ip (Internet protocol) address to remote or host users or system.It allows multiple computers that connected within network with single private local area network to using a singler ip address to acess the internet.In general SNAT work network environment.
-
-![ SNAT ](./docs/images/snat.png)
 
 ## What is virtualization?
 Virtualization is technique that created multiple physical layer over single physical layer that can be used by multiple physical machine or sharing the resource.
@@ -78,3 +74,50 @@ Details VXLAN: [VXLAN link 1](https://www.juniper.net/us/en/research-topics/what
 ![ vxlan-img-2 ](./docs/images/vxlan-img-2.png)
 
 ![ vxlan-img-3 ](./docs/images/vxlan-img-3.png)
+
+
+## DNAT(Destination network address translation)  
+
+Destination network address translation(DNAT) is technique for frequently changing the destination ip address over end route packet and performing the inverse function for any replies or responce.The translation can be from a public IP address to a private IP address or vice versa.
+
+Control flow: internet/server(10.10.10.1) -> media(DNAT) -> local or host machine(192.168.0.1)
+
+## SNAT(Source network address translation)
+
+Source Network Address Translation(SNAT) is technique that allows users in private network to access internet.SNAT rule will translate the inter ip address(private ip address) to public ip address.so that private network users can have access to public network via the public interface.
+
+Control flow: internet/server(10.10.10.1 public) <- media(SNAT) <- local or host machine(private network192.168.0.1)
+
+There 3 type os SNAT,
+  - DIPP(Dynamic ip and port)
+  - Dynamic IP
+  - Static IP
+
+![ SNAT ](./docs/images/snat.png)
+
+
+## SDN(Software define network)
+
+Software-Defined Networking (SDN) is an approach to networked that uses the software based controller or application programming interfaces (APIs) to communicate with underlying hardware infrastructure and direct traffic on a network.
+
+[SDN](https://www.vmware.com/topics/glossary/content/software-defined-networking)
+
+## Autonomous system
+
+An autonomous system(as) is a collection of one or more associated connected internet protocol routing prefix under the control of one more netwrok operators on behalf on single entity or organization.
+
+## ASN (Autonomous system Number)
+
+Autonomous system is assigned a number that number is called ASN(Autonomous system Number). The number could be 16 or 32 bit numbers.There is a limited amount of ASNs available.
+
+[AS](https://www.cloudflare.com/en-gb/learning/network-layer/what-is-an-autonomous-system/)
+
+
+
+
+
+
+
+
+
+
