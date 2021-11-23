@@ -112,6 +112,18 @@ Autonomous system is assigned a number that number is called ASN(Autonomous syst
 
 [AS](https://www.cloudflare.com/en-gb/learning/network-layer/what-is-an-autonomous-system/)
 
+## Underlay Network
+
+Underlay Network is physical infrastructure above overlay network is built. Underlying network responsible for delivery of packets across networks.
+
+
+## Overlay Network
+
+An Overlay Network is a virtual network which is built on top of underlying network (Underlay Network infrastructure). In other words, “Underlay or “Underlay network” provides a “service” to the overlay.
+
+
+
+
 
 
 
