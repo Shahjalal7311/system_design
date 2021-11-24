@@ -6,4 +6,4 @@
 
 First Lecture: ![First Lecture](./README1.md)  
 secondary Lecture: ![Lecture Lecture](./README2.md)  
-3rd Lecture: ![Lecture Lecture](./README2.md)
+3rd Lecture: ![Lecture Lecture](./README3.md)
