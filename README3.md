@@ -6,16 +6,16 @@ We have 2 swicth S1 and S2 and those also have ip adress
 
 And those switch also have VM(virtual machine)  
 
-        -------------------> VM1(1.1.0.1)
-        | (connect by veth)    
- - s1: --  
-        |  
-        -------------------> VM2(1.1.0.2)    
-        -------------------> VM3(1.2.0.1)     
-        |(connect by veth)  
- - s2: --    
-        | (connect by veth)      
-        -------------------> VM4(1.2.0.2)    
+|        -------------------> VM3(1.2.0.1)     
+|        |(connect by veth)  
+| - s2: --    
+|        | (connect by veth)      
+|        -------------------> VM4(1.2.0.2)    
+|        -------------------> VM3(1.2.0.1)     
+|        |(connect by veth)  
+| - s2: --    
+|        | (connect by veth)      
+|        -------------------> VM4(1.2.0.2)    
 
 For check data transmission: 
 
