@@ -1,4 +1,4 @@
-## How data packet transfer one switch to another switch?  
+## How data packet traverse one network to another network or internal network?  
 
 We have 2 swicth S1 and S2 and those also have ip adress   
   - s1: 1.1.0.0/16 (here 16 is ip host limitation 2^16 ip will share)  
