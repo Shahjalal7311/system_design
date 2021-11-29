@@ -50,6 +50,7 @@ Details: [Longest prefix](https://www.juniper.net/documentation/us/en/software/j
 
 
 ## Traveling salesman problem 
+
 The traveling salesman problem (TSP) is an algorithmic problem tasked with finding the shortest route between a set of points and locations that must be visited.
 
 Ex: Many order's are coming to Foodpanda. The food panda man has to deliver these orders to the specified place. The place is N1, N2, N3, N4, N5 (those are city).Each city are inerconnected with others. The Foodpanda man will visit those places will short time and low cost after that foodpanda man will retrun his destination.This is the traveling salesman problem alogoritham(TSP).
@@ -57,6 +58,25 @@ Ex: Many order's are coming to Foodpanda. The food panda man has to deliver thes
 Complexity: There is no polynomial solution.
 
 ![traveling salesman problem](./docs/images/tsp_a.png)
+
+## BGP(Border Gateway Protocol)?
+
+Border Gateway Protocol (BGP) is the postal service of the Internet. BGP gateway protocol that enables the internet to exchange routing information between autonomous systems (AS). As networks interact with each other, they need a way to communicate.
+
+![traveling salesman problem](./docs/images/as-routing.png)
+
+  - bgp peering: To establish point-to-point connections between peer autonomous systems (ASs).
+
+![as-peerning](./docs/images/as-connection.png)
+
+
+check AS area: [AS area](bgp.he.net)
+
+![as-peering-2](./docs/images/as-peering-2.png)
+
+![as-peering-3](./docs/images/as-peering-3.png)
+
+
 
 
 
