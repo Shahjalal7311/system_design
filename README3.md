@@ -24,10 +24,10 @@ ping 1.2.0.1(that mean send data packet S2 at VM1) for sending data packet it's 
 
 Prefix Table
 
-| Prefix  | Prefix               |
-| --------| -------------------  |
-| 1.1.0.0/16  | `npm run build` 
-| 1.2.0.0/16  | `npm run start`
+| Prefix      | Interface           |
+| ------------| ------------------- |
+| 1.1.0.0/16  |  A
+| 1.2.0.0/16  |  B
 
 
 ![ packet-transmission ](./docs/images/data-tranmission.png)
@@ -40,11 +40,23 @@ ping: 2.2.0.2 and traverse the path as bellow
 
 ![ packet-transmission-image-2 ](./docs/images/data-transmission-3.png)
 
+![merge-2-route-table](./docs/images/merge-2-route-table.png)
+
 ## Longest prefix
 
 An IP longest prefix match process adds a new route entry into the forwarding table, given an IP address and a prefix that includes 32 bits.
 
 Details: [Longest prefix](https://www.juniper.net/documentation/us/en/software/junos/static-routing/topics/ref/statement/longest-match-next-hop-edit-static-routing-options.html)
+
+
+## Traveling salesman problem 
+The traveling salesman problem (TSP) is an algorithmic problem tasked with finding the shortest route between a set of points and locations that must be visited.
+
+Ex: Many order's are coming to Foodpanda. The food panda man has to deliver these orders to the specified place. The place is N1, N2, N3, N4, N5 (those are city).Each city are inerconnected with others. The Foodpanda man will visit those places will short time and low cost after that foodpanda man will retrun his destination.This is the traveling salesman problem alogoritham(TSP).
+
+Complexity: There is no polynomial solution.
+
+![traveling salesman problem](./docs/images/tsp_a.png)
 
 
 
