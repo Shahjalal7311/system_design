@@ -25,4 +25,41 @@ In short, Vxlan create network febric or overlay with node in VM to comunicate w
 ![ node-connection ](./docs/images/node-connection.png)
 
 
+## Packet traverse VNI?
+VXLAN is an L2 overlay over an L3 network. Each overlay network is known as a VXLAN segment and identified by a unique 24-bit segment ID called a VXLAN Network Identifier (VNI).  Only hosts on the same VNI are allowed communicate with each other.  Hosts are identified uniquely by the combination of their MAC addresses and VNI.  As such it is possible to have duplicate MAC addresses in different VXLAN Segments without issue, but not in the same VXLAN segments.
+
+
+Vxlan Data tranmission packet header
+
+  - Ethernet Header
+    . Destination Address - This is set to the MAC address of the destination VTEP.
+    . Source Address - This is set to the MAC address of the source VTEP.
+    . VLAN - An optional field that is designated by an ethertype of 0×8100 and contains an associated VLAN ID tag.
+    . Ethertype - This is set to 0×0800 (IPv4). IPv6 support is currently in draft status
+
+  - IP Header
+    . Protocol
+    . Source IP
+    . Destination IP
+
+  - UDP Header
+    . Source Port - Set by originating VTEP
+    . VXLAN Port - IANA assigned VXLAN Port
+    . UDP Checksum - This should be set to 0×0000. If not set to 0x0000, then the receiving VTEP should verify the checksum. If not correct, frame shall be dropped.
+
+  - VXLAN Header
+    . VXLAN Flags - Reserved bits. Bit 3 set to 1 to indicate valid VNI
+    . VNI - VXLAN Network Identifier - 24 bit field.
+    . Reserved - Bit flags set to zero and reserved for future use
+
+Details: [ packet header ](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/guide-c07-734107.html)
+
+![ packet-traverse-vni ](./docs/images/packet-traverce-vni.png)
+
+
+## VPC design with VM and packet transfer with VM to Internet and vice-versa
+
+![ vpc-design ](./docs/images/vpc-design.png)
+
+
 
