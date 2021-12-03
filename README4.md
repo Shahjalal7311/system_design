@@ -31,26 +31,26 @@ VXLAN is an L2 overlay over an L3 network. Each overlay network is known as a VX
 
 Vxlan Data tranmission packet header
 
-  - Ethernet Header
-    . Destination Address - This is set to the MAC address of the destination VTEP.
-    . Source Address - This is set to the MAC address of the source VTEP.
+  - Ethernet Header  
+    . Destination Address - This is set to the MAC address of the destination VTEP.  
+    . Source Address - This is set to the MAC address of the source VTEP.  
     . VLAN - An optional field that is designated by an ethertype of 0×8100 and contains an associated VLAN ID tag.
-    . Ethertype - This is set to 0×0800 (IPv4). IPv6 support is currently in draft status
+    . Ethertype - This is set to 0×0800 (IPv4). IPv6 support is currently in draft status  
 
-  - IP Header
-    . Protocol
-    . Source IP
-    . Destination IP
+  - IP Header  
+    . Protocol  
+    . Source IP  
+    . Destination IP  
 
-  - UDP Header
-    . Source Port - Set by originating VTEP
-    . VXLAN Port - IANA assigned VXLAN Port
-    . UDP Checksum - This should be set to 0×0000. If not set to 0x0000, then the receiving VTEP should verify the checksum. If not correct, frame shall be dropped.
+  - UDP Header  
+    . Source Port - Set by originating VTEP  
+    . VXLAN Port - IANA assigned VXLAN Port  
+    . UDP Checksum - This should be set to 0×0000. If not set to 0x0000, then the receiving VTEP should verify the checksum. If not correct, frame shall be dropped.  
 
-  - VXLAN Header
-    . VXLAN Flags - Reserved bits. Bit 3 set to 1 to indicate valid VNI
-    . VNI - VXLAN Network Identifier - 24 bit field.
-    . Reserved - Bit flags set to zero and reserved for future use
+  - VXLAN Header  
+    . VXLAN Flags - Reserved bits. Bit 3 set to 1 to indicate valid VNI  
+    . VNI - VXLAN Network Identifier - 24 bit field.  
+    . Reserved - Bit flags set to zero and reserved for future use  
 
 Details: [ packet header ](https://www.cisco.com/c/en/us/products/collateral/switches/nexus-9000-series-switches/guide-c07-734107.html)
 
