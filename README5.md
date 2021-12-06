@@ -2,6 +2,8 @@
 
 Domain Name System (DNS) is the phonebook of the Internet. Humans access information online through domain names, like exmaple.com or espn.com. Web browsers interact through Internet Protocol (IP) addresses. DNS translates domain names to IP addresses so browsers can load Internet resources.dns work in 53 port.
 
+Load balancing is the practice of distributing traffic across more than one server to improve performance and availability. Organizations use different forms of load balancing to speed up both websites and private networks. Without load balancing, most Internet applications and websites would not handle traffic effectively or function correctly.
+
 For Example, Every device connected to the Internet has a unique IP address which other machines use to find the device. DNS servers eliminate the need for humans to memorize IP addresses such as 192.168.1.1.
 
 For more details about dns (DNS)[https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/]  
@@ -58,6 +60,43 @@ A loopback interface is a virtual interface that is always up and reachable as l
 Details loopback interface: (loopback-interface)[https://www.juniper.net/documentation/en_US/junos/topics/concept/interface-security-loopback-understanding.html]
 
 ![loopback-interface](./docs/images/loopback.png) 
+
+
+## What Is Scalability?
+Scalability describes a system’s elasticity and it's describes our system’s ability to adapt to change and demand. Good scalability protects you from future downtime and ensures the quality of our service.
+
+If we are running a website, web service, or application, its success hinges on the amount of network traffic it receives. It is common to underestimate just how much traffic our system will incur, especially in the early stages. This could result in a crashed server and/or a decline in our service quality. 
+    - Horizontal Scaling
+    - Vertical Scaling
+
+Horizontal Scaling: Horizontal scaling refers to adding additional nodes or machines to our infrastructure to cope or adjust with new demands. If we are hosting an application on a server and find that it no longer has the capacity or capabilities to handle traffic, adding a new server it's solved the probelm.
+
+Vertical Scaling: Vertical scaling describes adding additional resources to a system so that it meets demand or capabilities to handle traffic.vertical scaling adding more power at current machines or system. It upgrading the cpu like memory, storage, or network speed or others.
+
+
+Details about Horizontal & Vertical Scaling:  (Horizontal-Vertical-Scaling)[https://www.cloudzero.com/blog/horizontal-vs-vertical-scaling]
+
+
+## Domain Name System (DNS) based load balancing
+
+DNS-based load balancing is a specific type of load balancing that uses the DNS to distribute traffic across several servers. It does this by providing different IP addresses in response to DNS queries. Load balancers can use various methods or rules for choosing which IP address to share in response to a DNS query.
+
+Details of DNS based load balancing: (DNS based load balancing)[https://www.cloudflare.com/en-gb/learning/performance/what-is-dns-load-balancing/]
+
+
+## Time-to-live (TTL)
+
+Time to live (TTL) refers to the amount of time or “hops” that a packet is set to exist inside a network before being discarded by a router. TTL is also used in other contexts including CDN caching and DNS caching.
+
+Details about ttl: (ttl)[https://www.cloudflare.com/en-gb/learning/cdn/glossary/time-to-live-ttl/]
+
+
+
+
+Book Reff: 
+ (Designing Data Intensive Applications chapter-5)[./docs/images/Designing-Data-Intensive-Applications.pdf]   
+ (Designing Data Intensive Applications - chapter-10,11, page-start: 550)[./docs/images/High-Performance-MySQL-3rd-Edition-Mar-2012.pdf]
+
 
 
 
