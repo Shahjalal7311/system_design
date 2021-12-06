@@ -90,6 +90,29 @@ Time to live (TTL) refers to the amount of time or “hops” that a packet is s
 
 Details about ttl: (ttl)[https://www.cloudflare.com/en-gb/learning/cdn/glossary/time-to-live-ttl/]
 
+## Replication
+Replication means keeping a copy of the same data on multiple machines that are connected via a network.
+There are may reasons to replicate data. some are bello  
+    • To keep data geographically close to your users (and thus reduce latency)  
+    • To allow the system to continue working even if some of its parts have failed  
+    (and thus increase availability)  
+    • To scale out the number of machines that can serve read queries (and thus  
+    increase read throughput)  
+
+There area  popular algorithms for replicating changes between nodes
+    - single-leader,   
+    - multi-leader, and   
+    - leaderless replication  
+
+Replica: Each node that stores a copy of the database is called a replica.
+
+## synchronous replication
+
+
+## asynchronous replication
+
+
+
 
 
 
