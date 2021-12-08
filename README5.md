@@ -106,6 +106,11 @@ There area  popular algorithms for replicating changes between nodes
 
 Replica: Each node that stores a copy of the database is called a replica.
 
+leader-based replication: Every write to the database needs to be processed by every replica; otherwise, the rep‐
+licas would no longer contain the same data. The most common solution for this is
+called leader-based replication (also known as active/passive or master–slave replica‐
+tion) 
+
 ## synchronous replication
 
 
