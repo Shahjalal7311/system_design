@@ -127,6 +127,16 @@ asynchronous: In asynchronous replication, When user send the message to the mas
 
 Connection pooling is a cache of database connections maintained so that the connections can be reused when future requests to the database are required. Connection pools are used to enhance the performance of executing commands on a database.
 
+## Server
+
+## Multiple Process
+
+## Multiple Server
+
+## Best Fit
+
+## Mysql Replication & Scaling
+
 
 Book Reff: 
  (Designing Data Intensive Applications chapter-5)[./docs/images/Designing-Data-Intensive-Applications.pdf]   
