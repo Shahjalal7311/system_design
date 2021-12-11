@@ -112,13 +112,20 @@ called leader-based replication (also known as active/passive or master–slave 
 tion) 
 
 ## synchronous replication
+Synchronous replication is a process for simultaneous updates of multiple repositories often used with a storage area network or wireless network or other segmented system. In synchronous replication, the technology is writing data to two systems at once, rather than one at a time.
+For example synchronous: The user send the message to the master and it's waits until slave or replica(replica1, replica2) has confirmed that it received the write before reporting success to the user, and before making the write visible to other clients.
+
+![synchronous-replication](./docs/images/syncronus.png) 
 
 
 ## asynchronous replication
+asynchronous: In asynchronous replication, When user send the message to the master it' doesn't wait confirmation of slave or replica(replica1, replica2) response from replica.
 
+![asynchronous-replication](./docs/images/syncronus.png) 
 
+## Connection Polling
 
-
+Connection pooling is a cache of database connections maintained so that the connections can be reused when future requests to the database are required. Connection pools are used to enhance the performance of executing commands on a database.
 
 
 Book Reff: 
